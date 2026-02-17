@@ -11,6 +11,9 @@ internal fun RepositoryHandler.artifactRegistry() {
   maven {
     url = URI("artifactregistry://us-central1-maven.pkg.dev/highbeam-kairo/maven")
   }
+  maven {
+    url = URI("artifactregistry://us-central1-maven.pkg.dev/highbeam-osiris/maven")
+  }
 }
 
 public object Highbeam {
