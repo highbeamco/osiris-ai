@@ -33,7 +33,7 @@ kotlin {
 }
 
 dependencies {
-  implementation(platform(Airborne.kairo))
+  implementation(platform(Highbeam.kairo))
   implementation(platform(project(":bom")))
   detektPlugins("dev.detekt:detekt-rules-ktlint-wrapper:${detekt.toolVersion.get()}")
   testRuntimeOnly("org.slf4j:slf4j-simple")

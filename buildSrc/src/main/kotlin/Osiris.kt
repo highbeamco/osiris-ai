@@ -13,7 +13,7 @@ internal fun RepositoryHandler.artifactRegistry() {
   }
 }
 
-public object Airborne {
+public object Highbeam {
   // https://github.com/highbeamco/kairo/releases
   public const val kairo: String = "com.highbeam.kairo:bom-full:20260216.211909-4bed00c2"
 }

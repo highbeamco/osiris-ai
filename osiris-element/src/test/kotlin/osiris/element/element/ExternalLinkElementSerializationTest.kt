@@ -8,13 +8,13 @@ internal class ExternalLinkElementSerializationTest : ElementSerializationTest()
   @Test
   fun test(): Unit =
     runTest {
-      val element = ExternalLinkElement(content = "Airborne website", href = "https://airborne.software/")
+      val element = ExternalLinkElement(content = "Highbeam website", href = "https://highbeam.com/")
       json.serialize<Element>(element).shouldBe(
         """
           {
             "type": "ExternalLink",
-            "content": "Airborne website",
-            "href": "https://airborne.software/"
+            "content": "Highbeam website",
+            "href": "https://highbeam.com/"
           }
         """.trimIndent(),
       )
