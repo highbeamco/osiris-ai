@@ -12,12 +12,12 @@ internal class LinkElementParserTest : ElementParserTest() {
     runTest {
       val string =
         """
-          [Airborne website](https://airborne.software/)
+          [Highbeam website](https://highbeam.com/)
         """.trimIndent()
       val elements = MarkdownParser.parse(string)
       elements.shouldContainExactly(
         ParagraphElement(
-          listOf(ExternalLinkElement(content = "Airborne website", href = "https://airborne.software/")),
+          listOf(ExternalLinkElement(content = "Highbeam website", href = "https://highbeam.com/")),
         ),
       )
     }

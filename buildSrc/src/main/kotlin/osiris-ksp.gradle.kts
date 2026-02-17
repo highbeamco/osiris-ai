@@ -4,6 +4,6 @@ plugins {
 }
 
 dependencies {
-  ksp(platform(Airborne.kairo))
+  ksp(platform(Highbeam.kairo))
   ksp("io.insert-koin:koin-ksp-compiler")
 }
