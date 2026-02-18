@@ -24,6 +24,7 @@ kotlin {
     freeCompilerArgs.add("-Xannotation-default-target=param-property")
     freeCompilerArgs.add("-Xconsistent-data-class-copy-visibility")
     freeCompilerArgs.add("-Xcontext-parameters")
+    freeCompilerArgs.add("-Xexplicit-backing-fields")
     freeCompilerArgs.add("-Xjsr305=strict")
     freeCompilerArgs.add("-Xlambdas=indy")
     freeCompilerArgs.add("-opt-in=kotlin.concurrent.atomics.ExperimentalAtomicApi")
@@ -32,7 +33,7 @@ kotlin {
 }
 
 dependencies {
-  implementation(platform(Airborne.kairo))
+  implementation(platform(Highbeam.kairo))
   implementation(platform(project(":bom")))
   detektPlugins("dev.detekt:detekt-rules-ktlint-wrapper:${detekt.toolVersion.get()}")
   testRuntimeOnly("org.slf4j:slf4j-simple")
