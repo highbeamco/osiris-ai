@@ -5,5 +5,5 @@ plugins {
 repositories {
   mavenLocal()
   mavenCentral()
-  artifactRegistry()
+  highbeamKairo()
 }
