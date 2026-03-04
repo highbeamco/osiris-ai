@@ -23,12 +23,10 @@ jobs:
         uses: "google-github-actions/auth@v3" # https://github.com/google-github-actions/auth/releases
         with:
           credentials_json: ${{ secrets.GCP_CREDENTIALS }}
-      - name: "Set up Java"
-        uses: "actions/setup-java@v5" # https://github.com/actions/setup-java/releases
+      - name: "Activate Hermit"
+        uses: "cashapp/activate-hermit@v1" # https://github.com/cashapp/activate-hermit
         with:
-          java-version: "21"
-          distribution: "corretto"
-          cache: "gradle"
+          cache: true
       - name: "Compute version"
         id: "version"
         run: |
