@@ -18,5 +18,11 @@
 build/
 out/
 
+# Hermit
+.hermit/
+
+# Gradle wrapper (Hermit manages Gradle)
+**/gradle/wrapper/
+
 # Kotlin
 .kotlin/
