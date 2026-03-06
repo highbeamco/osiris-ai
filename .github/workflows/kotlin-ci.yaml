@@ -32,14 +32,14 @@ jobs:
           cache: true
       - name: "Gradle classes"
         run: |
-          ./gradlew classes testClasses
+          gradle classes testClasses
       - name: "Gradle test"
         run: |
-          ./gradlew test
+          gradle test
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           OPEN_AI_API_KEY: ${{ secrets.OPEN_AI_API_KEY }}
       - name: "Gradle detekt"
         run: |
-          ./gradlew detektMain detektTest
+          gradle detektMain detektTest
